@@ -61,6 +61,7 @@ body {
   letter-spacing: -0.25px;
   background-color: #fafafa;
   color: var(--grey);
+  overflow-x: hidden;
 }
 
 img {
@@ -218,6 +219,8 @@ select:-webkit-autofill:focus {
 
 /* SITE-HEADER */
 .site-header {
+  position: relative;
+  z-index: 50;
   background-color: #fff;
 }
 
@@ -231,4 +234,47 @@ select:-webkit-autofill:focus {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  z-index: 30;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-image: url("../img/hero-bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 650px) -260px;
+}
+
+.hero__content {
+  max-width: 440px;
+  width: 100%;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  color: var(--black);
+  letter-spacing: -1px;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 36px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--grey);
+}
+
+.hero__img {
+  position: absolute;
+  left: calc(50% + 150px);
+  top: -128px;
+  width: 729px;
+  height: 900px;
 }
