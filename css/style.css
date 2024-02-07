@@ -118,7 +118,7 @@ select:-webkit-autofill:focus {
 
 /* LOGO */
 .logo {
-  display: flex;
+  display: inline-block;
 }
 
 .logo:hover {
@@ -130,6 +130,7 @@ select:-webkit-autofill:focus {
 }
 
 .logo__img {
+  display: block;
   width: 139px;
   height: 20px;
   object-fit: contain;
@@ -288,6 +289,33 @@ select:-webkit-autofill:focus {
   margin: 0;
   font-size: 13px;
   line-height: 18px;
+}
+
+
+/* SOCIALS */
+.socials {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 13px;
+}
+
+.socials__link {
+  color: #fff;
+  display: flex;
+}
+
+.socials__link:hover {
+  color: var(--green);
+}
+
+.socials__link:active {
+  opacity: 0.6;
 }
 
 
@@ -454,4 +482,88 @@ select:-webkit-autofill:focus {
   line-height: 64px;
   margin-bottom: 40px;
   color: var(--black);
+}
+
+
+/* SITE-FOOTER */
+.site-footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  color: #fff;
+  background-color: var(--black);
+}
+
+.site-footer__container {
+  display: flex;
+}
+
+.site-footer__logo-socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 160px;
+  width: 100%;
+  margin-right: 130px;
+}
+
+.site-footer__logo {
+  margin-bottom: 24px;
+}
+
+/* SITE-FOOTER-LINKS */
+.site-footer__links-wrapper {
+  display: flex;
+  margin-right: auto;
+}
+
+.site-footer__links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 160px;
+}
+
+.site-footer__links:not(:last-child) {
+  margin-right: 30px;
+}
+
+.site-footer__links-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.site-footer__links-link {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.site-footer__links-link:hover {
+  color: var(--green);
+}
+
+.site-footer__links-link:active {
+  opacity: 0.6;
+}
+
+.site-footer__cta-copy {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.site-footer__cta-button {
+  margin-bottom: 24px;
+}
+
+.site-footer__copy {
+  margin: 0;
+  font-size: 15px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 0.5);
 }
